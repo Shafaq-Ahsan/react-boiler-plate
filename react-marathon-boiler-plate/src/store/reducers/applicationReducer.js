@@ -11,6 +11,11 @@ export function applicationReducer(state = initial_state, action) {
       state = newState;
       return state;
     }
+    case ActionTypes.SignUpRequestSuccess: {
+      var newState = Object.assign({}, state, { user: action.data });
+      state = newState;
+      return state;
+    }
     default:
       return state;
   }

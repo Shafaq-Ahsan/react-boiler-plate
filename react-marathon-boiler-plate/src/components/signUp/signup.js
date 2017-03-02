@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import './signup.css';
 import * as mat from 'material-ui';
 import {
-  hashHistory,
-  Router,
-  Route,
-  IndexRoute,
-  Link,
-  IndexLink
+    hashHistory,
+    Router,
+    Route,
+    IndexRoute,
+    Link,
+    IndexLink
 } from 'react-router';
 
 class SignUp extends Component {
@@ -29,6 +29,8 @@ class SignUp extends Component {
         evt.preventDefault();
         var email = evt.target.email.value;
         var password = evt.target.password.value;
+        var userObj = { "email": email, "password": password };
+        this.props.signUpRequest(userObj);
     }
 
     handleInputChange(event) {

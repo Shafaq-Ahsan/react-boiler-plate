@@ -3,7 +3,11 @@ const actionTypes = {
 
   LoginRequest        : 'LoginRequest',
   LoginRequestFailed  : 'LoginRequestFailed',
-  LoginRequestSuccess : 'LoginRequestSuccess'
+  LoginRequestSuccess : 'LoginRequestSuccess',
+
+  SignUpRequest        : 'SignUpRequest',
+  SignUpRequestFailed  : 'SignUpRequestFailed',
+  SignUpRequestSuccess : 'SignUpRequestSuccess'
 
 };
 
