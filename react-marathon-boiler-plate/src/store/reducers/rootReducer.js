@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 import { applicationReducer } from './applicationReducer';
 
 const rootReducer = combineReducers({
-  counter: applicationReducer
+  application: applicationReducer
 });
 
 export default rootReducer;

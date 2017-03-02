@@ -1,9 +1,14 @@
 import ActionTypes from '../actions/actionTypes';
 
-const initial_state = { counter: 0 };
+const initial_state = { };
 export function applicationReducer(state = initial_state, action) {
   switch (action.type) {
-    case ActionTypes.LoadInitialState : {
+    case ActionTypes.LoadInitialState: {
+      return state;
+    }
+    case ActionTypes.LoginRequestSuccess: {
+      var newState = Object.assign({}, state, { user: action.data });
+      state = newState;
       return state;
     }
     default:

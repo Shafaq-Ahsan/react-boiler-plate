@@ -29,6 +29,8 @@ class Login extends Component {
         evt.preventDefault();
         var email = evt.target.email.value;
         var password = evt.target.password.value;
+        var userObj = {"email":email,"password" :password};
+        this.props.loginRequest(userObj);
     }
 
     handleInputChange(event) {
@@ -42,7 +44,7 @@ class Login extends Component {
     }
 
     render() {
-        const { counter } = this.props.counter;
+        const { application } = this.props.application;
         return (
             <div className="main-login-div">
                 <mat.Card>

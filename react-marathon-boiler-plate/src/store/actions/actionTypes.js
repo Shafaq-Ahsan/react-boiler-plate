@@ -1,5 +1,10 @@
 const actionTypes = {
-  LoadInitialState : 'LoadInitialState'
+  LoadInitialState : 'LoadInitialState',
+
+  LoginRequest        : 'LoginRequest',
+  LoginRequestFailed  : 'LoginRequestFailed',
+  LoginRequestSuccess : 'LoginRequestSuccess'
+
 };
 
 export default actionTypes;

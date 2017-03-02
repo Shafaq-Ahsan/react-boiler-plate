@@ -42,7 +42,7 @@ class SignUp extends Component {
     }
 
     render() {
-        const { counter } = this.props.counter;
+        const { application } = this.props.application;
         return (
             <div className="main-login-div">
                 <mat.Card>

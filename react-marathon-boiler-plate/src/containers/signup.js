@@ -5,7 +5,7 @@ import { loadInitialState } from '../store/actions/loadInitialState';
 function mapStateToProps(state) {
   //here we are mapping the redux state to props so we can use it in our components
   return {
-    counter: state.counter
+    application: state.application
   };
 }
 
